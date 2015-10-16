@@ -1,0 +1,65 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:textColorPrimaryInverse">@color/bg_content</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowBackground">@color/bg_content</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+    <!-- ActionBar 样式集 -->
+    <style name="ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dip</item>
+        <item name="android:paddingTop">30dip</item>
+        <item name="android:background">@color/bg_actionbar</item>
+    </style>
+
+    <style name="ActionBar.LeftImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onBackClick</item>
+        <item name="android:src">@drawable/back_up</item>
+        <item name="android:background">@drawable/selector_common_item_press</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:padding">@dimen/distance_8_size</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="ActionBar.CenterTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_18_size</item>
+    </style>
+
+    <style name="ActionBar.RightImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:src">@drawable/right_indicator</item>
+        <item name="android:background">@drawable/selector_common_item_press</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:padding">@dimen/distance_8_size</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="ActionBar.RightText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/distance_8_size</item>
+        <item name="android:textSize">@dimen/text_16_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/selector_common_item_press</item>
+    </style>
+
+</resources>

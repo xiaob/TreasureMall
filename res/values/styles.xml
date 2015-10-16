@@ -1,0 +1,141 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Application theme. -->
+      <!-- Application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:textColorPrimaryInverse">@color/bg_content</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowBackground">@color/bg_content</item>
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slider_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slider_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slider_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slider_out_right</item>
+    </style>
+    <!-- ActionBar 样式集 -->
+    <style name="ActionBar_Bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:background">@color/actionbar_bg</item>
+    </style>
+
+    <style name="ActionBar_Left_Image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onBackClick</item>
+        <item name="android:src">@drawable/common_back_up</item>
+        <item name="android:background">@drawable/selector_common_actionbar_press</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:padding">@dimen/distance_8_size</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="ActionBar_Center_Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_20_size</item>
+    </style>
+
+    <style name="ActionBar_Right_Image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:src">@drawable/iv_home_message</item>
+        <item name="android:background">@drawable/selector_common_actionbar_press</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:padding">@dimen/distance_8_size</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="ActionBar_Right_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/distance_8_size</item>
+        <item name="android:textSize">@dimen/text_16_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/selector_common_actionbar_press</item>
+    </style>
+
+    <!-- 组合条目样式集 -->
+    <style name="GroupContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="GroupContainer.Normal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="GroupContainer.Panel">
+        <item name="android:padding">@dimen/distance_8_size</item>
+    </style>
+
+    <!-- Common样式 -->
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:layout_margin">@dimen/distance_12_size</item>
+        <item name="android:textSize">@dimen/text_18_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="com.union.beiqi:borderColor">@android:color/white</item>
+        <item name="com.union.beiqi:borderWidth">@dimen/one</item>
+        <item name="com.union.beiqi:defaultColor">@color/dark_purple</item>
+        <item name="com.union.beiqi:focusColor">@color/light_purple</item>
+        <item name="com.union.beiqi:radius">5dip</item>
+    </style>
+
+    <!-- 水平分割线 -->
+    <style name="HorizontalLineDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/one</item>
+        <item name="android:background">@color/light_blue</item>
+    </style>
+
+    <!-- 垂直分割线 -->
+    <style name="VerticalLineDivider">
+        <item name="android:layout_width">@dimen/one</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/distance_8_size</item>
+        <item name="android:background">@color/light_blue</item>
+    </style>
+
+    <!-- Dialog样式 -->
+    <style name="Loading_Dialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Error_Dialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+    </style>
+
+    <style name="BottomToTopAnim" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/bottomview_anim_enter</item>
+        <item name="@android:windowExitAnimation">@anim/bottomview_anim_exit</item>
+    </style>
+
+</resources>
